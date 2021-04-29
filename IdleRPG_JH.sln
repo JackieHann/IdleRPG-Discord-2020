@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdleRPG_JH.Bots", "IdleRPG_JH\IdleRPG_JH.Bots.csproj", "{0D80EBEC-EEE0-4A21-882C-84F7ED8EB99F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdleRPG_JH.Bots", "IdleRPG_JH.Bots", "{5B668148-7007-4777-BE86-4C533454A82D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D80EBEC-EEE0-4A21-882C-84F7ED8EB99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D80EBEC-EEE0-4A21-882C-84F7ED8EB99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D80EBEC-EEE0-4A21-882C-84F7ED8EB99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D80EBEC-EEE0-4A21-882C-84F7ED8EB99F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D80EBEC-EEE0-4A21-882C-84F7ED8EB99F} = {5B668148-7007-4777-BE86-4C533454A82D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {069A6711-FB10-48AE-A19B-0D582891C317}
+	EndGlobalSection
+EndGlobal

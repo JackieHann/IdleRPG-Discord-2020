@@ -1,0 +1,64 @@
+{
+  "Weapons": [
+    {
+      "maxDamage": 4,
+      "minDamage": 2,
+      "attackSpeed": 1.0,
+      "Prefix": "Something",
+      "Suffix": "of Something",
+      "itemClass": 1,
+      "UniqueID": 28065,
+      "Name": "Sword",
+      "Price": 0,
+      "Level": 3,
+      "iLevel": 5,
+      "Perfection": 0.55,
+      "Rarity": 4
+    },
+    {
+      "maxDamage": 4,
+      "minDamage": 2,
+      "attackSpeed": 1.0,
+      "Prefix": "Something",
+      "Suffix": "of Something",
+      "itemClass": 1,
+      "UniqueID": 25004,
+      "Name": "Sword",
+      "Price": 0,
+      "Level": 3,
+      "iLevel": 5,
+      "Perfection": 0.55,
+      "Rarity": 4
+    },
+    {
+      "maxDamage": 4,
+      "minDamage": 2,
+      "attackSpeed": 1.0,
+      "Prefix": "Something",
+      "Suffix": "of Something",
+      "itemClass": 1,
+      "UniqueID": 22280,
+      "Name": "Sword",
+      "Price": 0,
+      "Level": 3,
+      "iLevel": 5,
+      "Perfection": 0.55,
+      "Rarity": 4
+    },
+    {
+      "maxDamage": 4,
+      "minDamage": 2,
+      "attackSpeed": 1.0,
+      "Prefix": "Something",
+      "Suffix": "of Something",
+      "itemClass": 1,
+      "UniqueID": 23023,
+      "Name": "Sword",
+      "Price": 0,
+      "Level": 3,
+      "iLevel": 5,
+      "Perfection": 0.55,
+      "Rarity": 4
+    }
+  ]
+}
