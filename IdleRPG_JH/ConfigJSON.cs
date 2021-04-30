@@ -17,10 +17,6 @@ namespace IdleRPG_JH
         [JsonProperty("prefix")]
         public string Prefix { get; private set; }
 
-
-        [JsonProperty("Testing")]
-        public List<string> Testing { get; private set; }
-
         public DiscordConfiguration GetClientConfiguration()
         {
             return new DiscordConfiguration

@@ -11,9 +11,12 @@ using System.Timers;
 using DSharpPlus.Entities;
 
 using IdleRPG_JH.Channels;
+using Microsoft.Extensions.DependencyInjection;
+using IdleRPG_JH.Bots.Commands;
 
 namespace IdleRPG_JH.Bots
 {
+
     public class Bot
     {
         private Timer adventureTimer;
@@ -34,20 +37,22 @@ namespace IdleRPG_JH.Bots
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
         }
 
+
+        
+
         public async Task RunAsync()
         {
             ConfigJson settings = await ReadJSONFromFileIntoTypeAsync<ConfigJson>("./../../../Config.json");
-            settings.Testing.Add("666");
-            settings.Testing.Remove("1");
-
-            string newStr = Newtonsoft.Json.JsonConvert.SerializeObject(settings);
 
             Client = new DiscordClient(settings.GetClientConfiguration());
             Client.Ready += OnClientReady;
-            //Client.OnElapsed += OnClientReady;
 
-            Commands = Client.UseCommandsNext(settings.GetCommandsConfiguration());
+
+            CommandsNextConfiguration cfg = settings.GetCommandsConfiguration();
+            Commands = Client.UseCommandsNext(cfg);
+            Commands.RegisterCommands<PartyCommandsModule>();
             Commands.RegisterCommands<AdminCommands>();
+            Commands.RegisterCommands<AdventureCommandsModule>();
 
             await Client.ConnectAsync();
             await Task.Delay(-1);
@@ -56,8 +61,9 @@ namespace IdleRPG_JH.Bots
         private Task OnClientReady(DiscordClient t, DSharpPlus.EventArgs.ReadyEventArgs e)
         {
             Singleton.Instance.Instantiate();
-            //Start logging
-            InitAdventureTimer();
+            
+            
+            //InitAdventureTimer();
 
             return Task.CompletedTask;
         }
